@@ -16,7 +16,7 @@ mse_audio = zeros(size(EbN0_dB_vec));
 corr_audio = zeros(size(EbN0_dB_vec));
 
 % Audio reference
-[orig_audio, ~] = audioread('voice_input.wav');
+[orig_audio, ~] = audioread('audio/voice_input.wav');
 test_len = 8000;  % 1 second
 
 fprintf('=== BER / Audio Quality Sweep ===\n');
@@ -89,5 +89,5 @@ ylim([0, 1.05]);
 sgtitle('Voice Transmission Quality over AWGN Channel');
 
 % Save results
-save('ber_results.mat', 'EbN0_dB_vec', 'snr_audio', 'mse_audio', 'corr_audio');
-fprintf('\nResults saved to ber_results.mat\n');
+save('data/ber_results.mat', 'EbN0_dB_vec', 'snr_audio', 'mse_audio', 'corr_audio');
+fprintf('\nResults saved to data/ber_results.mat\n');

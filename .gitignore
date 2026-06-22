@@ -62,6 +62,8 @@ xsim.dir/
 *.runs/
 *.gen/
 *.cache/
+*.hw/
+*.ip_user_files/
 NFS/
 hdl_output/
 
@@ -81,6 +83,8 @@ vivado_*.log
 vivado_*.backup.log
 vivado_*.jou
 vivado_*.str
+vivado.log
+vivado.jou
 
 # Vivado generated scripts
 xsim_cfg.tcl
@@ -91,29 +95,24 @@ xsim.ini
 # Root-level generated / temp files
 # ============================================================
 
-# HDL Coder mini HTML reports at repo root (duplicates)
+# HDL Coder duplicated HTML reports at repo root
 /hdlsrc/
 
-# Empty auto-generated WAV
+# Auto-generated WAV output from Simulink model
 /voice_output.wav
-*.wav
-
-# Simulink auto-backup
-/voice_tx_hdl_cosim.slx.original
+/audio
 
 # Vivado / HDL generation log
 /gen_hdl_vivado_log.txt
 
 # MATLAB toolbox installer (binary)
 /agenticToolkitInstaller.mltbx
-
+data/
 # Board manual (reference, not source)
 /ax7z020_manual.txt
 
-# Empty placeholder
-/scripts/
-
-# Misc temp
+# Misc temp / debug logs
+logs/
 sim_log.txt
 claude_session.txt
 dfx_runtime.txt

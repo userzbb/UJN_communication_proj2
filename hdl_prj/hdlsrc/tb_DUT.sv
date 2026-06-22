@@ -28,6 +28,10 @@ module tb_DUT;
     integer     i, bit_count, error_count;
     integer     cycle;
 
+    // Waveform-friendly expected value (unpacked arrays don't display in Vivado)
+    reg  [7:0]  expected_now;       // expected value being checked this cycle
+    reg  [7:0]  expected_prev;      // bits_in from 2 cycles ago (for waveform alignment)
+
     // DUT instantiation
     DUT u_DUT (
         .clk        (clk),
@@ -82,6 +86,8 @@ module tb_DUT;
 
             // Check: at cycle >= 3, bits_out = expected[cycle-2]
             if (cycle >= 3) begin
+                expected_prev = expected[cycle-2];
+                expected_now  = bits_in;
                 bit_count = bit_count + 1;
                 if (bits_out !== expected[cycle-2]) begin
                     error_count = error_count + 1;

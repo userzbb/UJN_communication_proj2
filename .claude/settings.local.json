@@ -88,7 +88,13 @@
       "Bash(rm:*)",
       "Bash(grep -v \"^D:/zizim/Documents/UJN_HW/proj2$\")",
       "Bash(find:*)",
-      "Bash(\"F:/AMDDesignTools/2025.2/Vivado/bin/vivado.bat\" -mode batch -source \"D:/zizim/Documents/UJN_HW/proj2/vivado/bpsk/create_project.tcl\")"
+      "Bash(\"F:/AMDDesignTools/2025.2/Vivado/bin/vivado.bat\" -mode batch -source \"D:/zizim/Documents/UJN_HW/proj2/vivado/bpsk/create_project.tcl\")",
+      "Bash(mv:*)",
+      "Bash(mv run_ber_sweep.m scripts/common/)",
+      "Bash(mv board_def/alinx_ax7z020.m scripts/common/board_def/)",
+      "Bash(rmdir board_def)",
+      "Bash(mkdir -p \"D:/zizim/Documents/UJN_HW/proj2/logs\")",
+      "Bash(rm -f vivado.jou vivado.log gen_hdl_vivado_log.txt dfx_runtime.txt voice_input.wav voice_output.wav)"
     ]
   }
 }
