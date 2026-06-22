@@ -1,0 +1,19 @@
+MOD: voice_tx_hdl_cosim/BPSK\nModulator/BPSK_Mod_HDL
+  bit_in (Inport)
+  LUT (Lookup_n-D)
+  sym_out (Outport)
+MOD: voice_tx_hdl_cosim/DUT/BPSK_Mod_HDL
+  bit_in (Inport)
+  Delay (Delay)
+  LUT (Lookup_n-D)
+  sym_out (Outport)
+DEMOD: voice_tx_hdl_cosim/BPSK\nDemodulator/BPSK_Demod_HDL
+  rx_sym_in (Inport)
+  CmpZero (SubSystem)
+  DTConv (DataTypeConversion)
+  bit_out (Outport)
+DEMOD: voice_tx_hdl_cosim/DUT/BPSK_Demod_HDL
+  rx_sym_in (Inport)
+  CmpZero (SubSystem)
+  DTConv (DataTypeConversion)
+  bit_out (Outport)
