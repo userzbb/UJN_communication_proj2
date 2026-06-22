@@ -87,7 +87,8 @@
       "Bash(\"F:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xvlog\" --version)",
       "Bash(rm:*)",
       "Bash(grep -v \"^D:/zizim/Documents/UJN_HW/proj2$\")",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(\"F:/AMDDesignTools/2025.2/Vivado/bin/vivado.bat\" -mode batch -source \"D:/zizim/Documents/UJN_HW/proj2/vivado/bpsk/create_project.tcl\")"
     ]
   }
 }

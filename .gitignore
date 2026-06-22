@@ -53,7 +53,8 @@ hdl_prj/**/*.mat
 
 
 # ============================================================
-# Vivado / Xilinx
+# Vivado / Xilinx — generated artifacts
+# KEEP: *.xpr (project), *.xdc (constraints), *.srcs/ (sources)
 # ============================================================
 .Xil/
 xsim.dir/
@@ -63,7 +64,6 @@ xsim.dir/
 *.cache/
 NFS/
 hdl_output/
-*.xpr
 
 # Waveform dumps
 *.vcd
@@ -86,10 +86,6 @@ vivado_*.str
 xsim_cfg.tcl
 xsim.ini
 
-# Vivado project directories
-bpsk_sim/
-*_proj/
-
 
 # ============================================================
 # Root-level generated / temp files
@@ -100,6 +96,7 @@ bpsk_sim/
 
 # Empty auto-generated WAV
 /voice_output.wav
+*.wav
 
 # Simulink auto-backup
 /voice_tx_hdl_cosim.slx.original
