@@ -1,0 +1,138 @@
+# ============================================================
+# MATLAB / Simulink
+# ============================================================
+slprj/
+*.slxc
+*.autosave
+*.asv
+*.mexw64
+
+# Simulink auto-backups
+*.slx.original
+*.slx.orig
+*.slx.broken
+
+
+# ============================================================
+# HDL Coder output (hdl_prj/hdlsrc/)
+# KEEP: *.v, *.vhd, *.sv HDL source and tb_DUT.sv
+# IGNORE: everything else below is auto-generated
+# ============================================================
+
+# HTML report asset libraries (~600 CSS/JS/font/image files per design)
+**/_htmllib/
+
+# HTML reports
+hdl_prj/hdlsrc/**/html/
+hdl_prj/hdlsrc/**/*.html
+
+# Gateway models (auto-generated Simulink wrappers)
+hdl_prj/hdlsrc/**/gm_*.slx
+
+# Auto-generated MATLAB helpers
+hdl_prj/hdlsrc/**/annotate_port.m
+hdl_prj/hdlsrc/**/clearhighlighting.m
+hdl_prj/hdlsrc/**/highlightLUTPipeliningDiagnostic.m
+
+# HDL Coder status/manifest files
+hdl_prj/hdlsrc/**/hdlcodegenstatus.json
+hdl_prj/hdlsrc/**/hdlcodegenstatus.mat
+hdl_prj/hdlsrc/**/DUT_map.txt
+
+# ModelSim/Questa compile scripts
+hdl_prj/hdlsrc/**/*.do
+
+# HDL Coder verification check files (MAT-file, no extension)
+hdl_prj/hdlsrc/**/hcv
+
+# Nested/duplicate hdlsrc output
+hdl_prj/hdlsrc/*/hdlsrc/
+
+# .mat files inside hdl_prj (status files only)
+hdl_prj/**/*.mat
+
+
+# ============================================================
+# Vivado / Xilinx
+# ============================================================
+.Xil/
+xsim.dir/
+*.sim/
+*.runs/
+*.gen/
+*.cache/
+NFS/
+hdl_output/
+*.xpr
+
+# Waveform dumps
+*.vcd
+*.wdb
+
+# Progress / diagnostic files
+*.pb
+*.jou
+*.rtti
+*.xdbg
+*.debug_log
+
+# Vivado logs
+vivado_*.log
+vivado_*.backup.log
+vivado_*.jou
+vivado_*.str
+
+# Vivado generated scripts
+xsim_cfg.tcl
+xsim.ini
+
+# Vivado project directories
+bpsk_sim/
+*_proj/
+
+
+# ============================================================
+# Root-level generated / temp files
+# ============================================================
+
+# HDL Coder mini HTML reports at repo root (duplicates)
+/hdlsrc/
+
+# Empty auto-generated WAV
+/voice_output.wav
+
+# Simulink auto-backup
+/voice_tx_hdl_cosim.slx.original
+
+# Vivado / HDL generation log
+/gen_hdl_vivado_log.txt
+
+# MATLAB toolbox installer (binary)
+/agenticToolkitInstaller.mltbx
+
+# Board manual (reference, not source)
+/ax7z020_manual.txt
+
+# Empty placeholder
+/scripts/
+
+# Misc temp
+sim_log.txt
+claude_session.txt
+dfx_runtime.txt
+
+
+# ============================================================
+# Claude Code
+# KEEP: settings.json, settings.local.json
+# ============================================================
+.claude/backups/
+.claude/tasks/
+
+
+# ============================================================
+# OS
+# ============================================================
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
