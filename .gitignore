@@ -12,7 +12,8 @@ slprj/
 *.slx.orig
 *.slx.broken
 
-
+resources/
+project/
 # ============================================================
 # HDL Coder output (hdl_prj/hdlsrc/)
 # KEEP: *.v, *.vhd, *.sv HDL source and tb_DUT.sv
